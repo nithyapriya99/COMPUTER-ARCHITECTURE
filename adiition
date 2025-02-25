@@ -1,0 +1,21 @@
+LXI H, 5000H    
+MOV D, M        
+INX H          
+MOV E, M       
+
+LXI H, 5002H   
+MOV B, M        
+INX H           
+MOV C, M        
+MOV A, D       
+ADD B          
+MOV L, A       
+MOV A, E       
+ADC C           
+MOV H, A        
+
+LXI D, 6000H    
+MOV M, L        
+INX D           
+MOV M, H       
+HLT             
